@@ -6,8 +6,12 @@ import { ResourceKey } from 'i18next'
 import resources from '../../src/shared/locales'
 
 const error = chalk.bold.red
-const warning = chalk.keyword('orange')
-const success = chalk.keyword('green')
+// const warning = chalk.keyword('orange')
+// const success = chalk.keyword('green')
+
+// Changed to below code as 'Property 'keyword' does not exist on type 'ChalkInstance'.ts(2339)
+const warning = chalk.red
+const success = chalk.green
 
 const checkRecursiveTranslation = (
   comparingLanguage: string,
